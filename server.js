@@ -60,6 +60,12 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(cors({
+  origin: ["https://your-frontend.vercel.app"], // allow only your Vercel domain
+  methods: ["GET", "POST"],
+}));
+
+
 // ✅ Root route
 app.get("/", (req, res) => {
   res.send("Welcome to the backend server (MongoDB version)");
