@@ -61,7 +61,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: ["https://client-portfolio-liard-nu.vercel.app"], // allow only your Vercel domain
+  origin: ["https://client-portfolio-4e6i.onrender.com"], // allow only your Vercel domain
   methods: ["GET", "POST"],
 }));
 
